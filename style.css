@@ -445,12 +445,10 @@ textarea::placeholder{
     align-items: center;
     height: 4vh;
     width: 50%;
-    color: #333333;
-    /* border: 1px solid blue; */
 }
 
 .footer div:hover{
-    color: #f2f2f2;
+    color: red;
 }
 
 .footer .social{

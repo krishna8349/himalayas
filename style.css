@@ -415,23 +415,18 @@ textarea::placeholder{
 }
 
 .fourth .maps{
-    /* width: 35%;
-    height: 45vh; */
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
+    filter: invert(100%);
+    margin-right: 20px;
 }
 
 .iframe{
     color: #333;
 }
 
-/* .map div{
-    box-sizing: border-box;
-} */
-
 .footer{
     height: 30vh;
     /* border: 1px solid red; */
-    /* background-color: #232323; */
     display: flex;
     justify-content: center;
     align-items: center;

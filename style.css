@@ -37,6 +37,10 @@ body {
     margin-left: 20px;
 }
 
+.heading:hover{
+    color: #f2f2f2;
+}
+
 .nav{
     display: flex;
     justify-content: right;
@@ -121,74 +125,6 @@ li a:hover {
     color:darkgoldenrod;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-/* .third .menu-list{
-    width: 70%;
-    height: 60vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    border: 1px solid red;
-}
-
-.item{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    text-align: center;
-    border: 1px solid rgba(109, 27, 27, 0.8);
-} */
-
-/* Slideshow container */
-/* .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-} */
-  
-  /* Caption text */
-/* .text {
-    color: #111;
-    font-size: 25px;
-    font-weight: 1000;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-} */
-  
-  /* Number text (1/3 etc) */
-/* .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-   */
-  /* The dots/bullets/indicators */
-/* .dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-} */
-  
-/* .active {
-    background-color: #717171;
-} */
-  
-/* Fading animation */
-/* .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-} */
 
 /* Onclick slider */
 .slider {
@@ -278,7 +214,8 @@ li a:hover {
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
-} */
+}
+
 .slider > a:active {
     top: 1px;
 }
@@ -287,11 +224,7 @@ li a:hover {
 }
 
 .menu{
-    /* position: relative; */
-    /* display: flex; */
-    /* justify-content: center; */
     width: 50%;
-    height: 100%;
     /* border: 1px solid red; */
     flex-direction: column;
     margin-left: 25%;
@@ -305,8 +238,7 @@ li a:hover {
 
 .menu .rate-chart{
     color: #ccc;
-    width: 100%;
-    height: 100%;
+    width: 60%;
     /* border: 1px solid yellow; */
     box-sizing: border-box;
 }
@@ -314,61 +246,56 @@ li a:hover {
 /* slider css */
 /* Slideshow container */
 .slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-padding: 16px;
-margin-top: -22px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-right: 0;
-border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .active, .dot:hover {
-background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-animation-name: fade;
-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
+    from {opacity: .4} 
+    to {opacity: 1}
 }
-
 
 .fourth{
     margin-top: 60px;
     height: 90vh;
-    position: relative;
-    /* flex-direction: row;
-    display: flex;
-    justify-content: space-between; */
 }
 
 .fourth .contact{
@@ -388,7 +315,6 @@ input::placeholder{
 textarea::placeholder{
     color:  #E7E7E7;
     font-family: Montserrat,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 .contact input{
@@ -415,23 +341,14 @@ textarea::placeholder{
 }
 
 .fourth .maps{
-    /* width: 35%;
-    height: 45vh; */
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
+    filter: invert(100%);
+    margin-right: 20px;
 }
-
-.iframe{
-    color: #333;
-}
-
-/* .map div{
-    box-sizing: border-box;
-} */
 
 .footer{
     height: 30vh;
     /* border: 1px solid red; */
-    /* background-color: #232323; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,12 +362,10 @@ textarea::placeholder{
     align-items: center;
     height: 4vh;
     width: 50%;
-    color: #333333;
-    /* border: 1px solid blue; */
 }
 
 .footer div:hover{
-    color: #f2f2f2;
+    color: red;
 }
 
 .footer .social{
@@ -461,3 +376,149 @@ textarea::placeholder{
     color: #f2f2f2;
     cursor: pointer;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .main{
+        display: flex;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .heading{
+        margin: 0%;
+    }
+
+    .navbar .nav a{
+        padding: 10px;
+    }
+
+    .front{
+        width: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .front .demo-image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .front .highlight {
+        font-size: 20px;
+    }
+
+    .second{
+        width: auto;
+        height: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .second .second-demo-image{
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+
+    .second .highlight2 {
+        font-size: 20px;
+        margin: 0%;
+        margin-bottom: 20px;
+        left: 0;
+    }
+
+    .third{
+        width: 100%;
+    }
+
+    .third .slider{
+        width: 100%;
+    }
+
+    .menu{
+        margin: 0%;
+        width: 100%;
+    }
+
+    .menu .rate-chart{
+        width: 100%;
+    }
+
+    .fourth{
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourth .contact {
+        width: 100%;
+        margin: 0;
+        margin-top: 15px;
+        /* left: 0; */
+        right: 0;
+        height:auto;
+        background-color: transparent;
+    }
+
+    .contact input{
+        padding: 0%;
+        height: 4vh;
+        width: 100%;
+    }
+
+    .fourth .contact span{
+        width: 100%;
+    }
+
+    .fourth .contact textarea{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .fourth .maps{
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0%;
+        border: 1px solid red;
+    }
+
+    .footer{
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .footer div{
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+    
+    .social{
+        display: flex;
+        justify-content: left;
+    }
+
+    .social .icon{
+        /* width: 950px; */
+        display: flex;
+        /* justify-content: left; */
+        padding: 9px;
+        padding-right: 40px;
+    }
+
+  }

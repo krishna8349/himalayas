@@ -24,15 +24,13 @@ body {
     align-items: center;
 }
 
-.navbar{
+.nav{
     display:flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-.heading {
-    display: flex;
-    justify-content: right;
+.nav .heading {
     color:red;
     margin-left: 20px;
 }
@@ -41,32 +39,34 @@ body {
     color: #f2f2f2;
 }
 
-.nav{
+.navbar {
     display: flex;
-    justify-content: right;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    float: left;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: #333; */
 }
   
-li a {
+.navbar a {
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
-    padding: 29px 16px;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
-  
-  /* Change the link color to #111 (black) on hover */
-li a:hover {
+
+.navbar a:hover {
+    /* background-color: #ddd; */
     color: red;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
 }
 
 .front{
@@ -384,6 +384,30 @@ textarea::placeholder{
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .main{
@@ -392,7 +416,7 @@ textarea::placeholder{
 
     .navbar{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         margin: 0;
     }

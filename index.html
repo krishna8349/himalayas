@@ -11,14 +11,17 @@
 </head>
 <body>
     <main class="main">
-        <div class="navbar">
+        <div class="nav">
             <h1 class="heading">Himaliyas</h1>
-            <ul class="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">About us</a></li>
-            </ul>
+            <div class="navbar" id="myTopnav">
+              <a href="#">Home</a>
+              <a href="#">Contact us</a>
+              <a href="#">Menu</a>
+              <a href="#">About us</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
         </div>
         <section class="front">
             <div class="front-display">
@@ -149,39 +152,19 @@
         dots[slideIndex-1].className += " active";
       }
       </script>
-    <!-- <script>  
-      function Map123() {  
-      var mapOptions = {  
-          center:new google.maps.LatLng(51.508742,-0.120850),  
-          zoom: 10,  
-          mapTypeId: google.maps.MapTypeId.HYBRID  
-      }  
-      var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-      }  
-
-      </script>  
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script> -->
-
-    <!-- <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+    
+    <!-- navbar show menu icon -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+            x.style.flexDirection = 'column'
+          } else {
+            x.className = "navbar";
+            x.style.flexDirection = 'row'
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
-        </script> -->
+    </script>
 </body>
 </html>

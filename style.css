@@ -413,6 +413,7 @@ textarea::placeholder{
     }
 
     .front .demo-image{
+        margin-left: 0%;
         width: 100%;
         height: 100%;
     }
@@ -521,7 +522,7 @@ textarea::placeholder{
     .social .icon{
         display: flex;
         padding: 9px;
-        padding-right: 40px;
+        /* padding-right: 40px; */
     }
 
   }
@@ -540,8 +541,9 @@ textarea::placeholder{
     }
 
     .front .demo-image{
-        width: 100%;
-        height: 100%;
+        margin-left: 25%;
+        width: 80%;
+        height: 70%;
     }
 
     .front .highlight {
@@ -651,7 +653,16 @@ textarea::placeholder{
         width: auto;
         margin: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .front .demo-image{
+        margin-left: 25%;
+        width: 70%;
+        height: 60%;
+    }
+
 
     .second{
         width: auto;
@@ -687,9 +698,9 @@ textarea::placeholder{
         width: 100%;
     }
 
-    .menu .rate-chart{
-        width: 60%;
-    }
+    /* .menu .rate-chart{
+        width: 80%;
+    } */
 
     .fourth{
         width: auto;

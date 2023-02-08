@@ -538,16 +538,16 @@ textarea::placeholder{
         text-align: left;
     }
     
-    .social{
+    /* .social{
         display: flex;
-        justify-content: left;
-    }
+        justify-content: right;
+    } */
 
-    .social .icon{
+    /* .social .icon{
         display: flex;
         padding: 9px;
         /* padding-right: 40px; */
-    }
+    /* } s */
 
   }
 

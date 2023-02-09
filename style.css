@@ -11,6 +11,10 @@ body {
     background-color: #111;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .main{
     width: 100%;
     height: auto;
@@ -416,7 +420,6 @@ textarea::placeholder{
 
     .navbar{
         display: flex;
-        /* flex-direction: column; */
         justify-content: center;
         margin: 0;
     }
@@ -425,8 +428,8 @@ textarea::placeholder{
         margin: 0%;
     }
 
-    .navbar .nav a{
-        padding: 10px;
+    .navbar a{
+        display: none;
     }
 
     .front{

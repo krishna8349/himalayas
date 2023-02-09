@@ -379,6 +379,14 @@ textarea::placeholder{
     color: red;
 }
 
+.footer .logo-name:hover{
+    color: #CCCCC7;
+}
+
+.footer .quots:hover{
+    color: #CCCCC7;
+}
+
 .footer .social{
     width: 10%;
 }

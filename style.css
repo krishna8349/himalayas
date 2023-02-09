@@ -283,13 +283,17 @@ textarea::placeholder{
     color: #CCCCC7;
 }
 
-.footer .social{
-    width: 10%;
+.footer .social a{
+    width: 5%;
 }
 
-.footer .social div:hover{
+.footer .social .fa{
     color: #f2f2f2;
+}
+
+.footer .social .fa:hover{
     cursor: pointer;
+    color: red;
 }
 
 @media screen and (max-width: 600px) {
@@ -441,6 +445,10 @@ textarea::placeholder{
         justify-content: left;
         text-align: left;
     }
+
+    .footer .social a{
+        width: 5%;
+    }
   }
 
   /* Extra small devices (tablets, 800px and down) */
@@ -553,6 +561,10 @@ textarea::placeholder{
         display: flex;
         justify-content: left;
         text-align: left;
+    }
+
+    .footer .social a{
+        width: 10%;
     }
 }
 

@@ -11,6 +11,10 @@ body {
     background-color: #111;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .main{
     width: 100%;
     height: auto;
@@ -375,6 +379,14 @@ textarea::placeholder{
     color: red;
 }
 
+.footer .logo-name:hover{
+    color: #CCCCC7;
+}
+
+.footer .quots:hover{
+    color: #CCCCC7;
+}
+
 .footer .social{
     width: 10%;
 }
@@ -416,7 +428,6 @@ textarea::placeholder{
 
     .navbar{
         display: flex;
-        /* flex-direction: column; */
         justify-content: center;
         margin: 0;
     }
@@ -425,8 +436,8 @@ textarea::placeholder{
         margin: 0%;
     }
 
-    .navbar .nav a{
-        padding: 10px;
+    .navbar a{
+        display: none;
     }
 
     .front{
@@ -538,16 +549,16 @@ textarea::placeholder{
         text-align: left;
     }
     
-    .social{
+    /* .social{
         display: flex;
-        justify-content: left;
-    }
+        justify-content: right;
+    } */
 
-    .social .icon{
+    /* .social .icon{
         display: flex;
         padding: 9px;
         /* padding-right: 40px; */
-    }
+    /* } s */
 
   }
 

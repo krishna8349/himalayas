@@ -27,15 +27,17 @@
         <section class="front">
             <div class="front-display">
                 <div class="demo-image">
-                    <img src="/images/How-to-Bake-Chicken-Breast-6.jpg" alt="Trulli" width="90%" height="90%">
+                    <img src="/images/How-to-Bake-Chicken-Breast-6.jpg" alt="Trulli" width="100%" height="90%">
                 </div>
             </div>
-            <h1 class="highlight">GOOD TIME WITH <br>GREAT FRIENDS</h1>
+            <div class="highlight">
+              <h1>GOOD TIME WITH GREAT FRIENDS</h1>
+            </div>
         </section>
         <section class="second">
             <div class="highlight2">
-                <h1>SERVING TASTY
-                BITES SINCE 2023</h1>
+                <h1>SERVING TASTY <br>
+                BITES</h1>
             </div>
             <div class="second-demo-image">
                 <img src="/images/jamaican-jerk-chicken-FT-RECIPE0918-eabbd55da31f4fa9b74367ef47464351.jpg" alt="" width="100%" height="100%"> 
@@ -46,19 +48,19 @@
           <div class="rate-chart">
             <div class="slideshow-container">
               <div class="mySlides fade">
-                <img src="images/first-page.jpg" style="width:100%">
+                <img src="images/first-page.jpg" style="width:80%">
               </div>
               
               <div class="mySlides fade">
-                <img src="images/second-page.jpg" style="width:100%">
+                <img src="images/second-page.jpg" style="width:80%">
               </div>
               
               <div class="mySlides fade">
-                <img src="images/third-page.jpg" style="width:100%">
+                <img src="images/third-page.jpg" style="width:80%">
               </div>
 
               <div class="mySlides fade">
-                <img src="images/fourth-page.jpg" style="width:100%">
+                <img src="images/fourth-page.jpg" style="width:80%">
               </div>
 
               <div class="mySlides fade">
@@ -72,6 +74,24 @@
         <section class="fourth" id="contact">
           <div class="contact">
             <h1 class="con">CONTACT</h1>
+            <a href="" class="loc-icon">
+              <i class="fa fa-location-arrow   fa-lg"></i>
+            </a>
+            <div class="con-location">
+              <p>RAU BYPASS, near SILICON VALLEY,<br> RAU, Indore, Madhya Pradesh 452016</p>
+            </div>
+            <a href="" class="con-icon">
+              <i class="fa fa-phone-square fa-lg"></i>
+            </a>
+            <div class="con-number">
+              <p>7354519859</p>
+            </div>
+            <a href="" class="mes-icon">
+              <i class="fa fa-comment fa-lg"></i>
+            </a>
+            <div class="message-us">
+              <p>Message us</p>
+            </div>
               <span class="name">
                 <input type="text" name="name" placeholder="Name">
               </span>
@@ -82,8 +102,9 @@
                 <input type="email" name="email" placeholder="Email Address">
               </span>
               <span class="message">
-                <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="3" placeholder="Message"></textarea>
               </span>
+              <button type="submit" class="submit-btn">send message</button>
             </div>
             <div class="maps">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1030.0176137911908!2d75.83331267091118!3d22.634475077386803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fb905efa0b79%3A0x25ff356f2797cdfe!2sHimalayas%20restaurant%20and%20Dhaba!5e1!3m2!1sen!2sin!4v1675160033415!5m2!1sen!2sin" width="100%" height="350vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -146,7 +167,6 @@
           if (x.className === "navbar") {
             x.className += " responsive";
             x.style.flexDirection = 'column';
-            x.style.top=20;
           } else {
             x.className = "navbar";
             x.style.flexDirection = 'row'

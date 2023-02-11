@@ -1,8 +1,10 @@
 body {
+    margin: 0;
+    padding: 0;
     color: #ccc;
     display: flex;
     flex-direction: column;
-    font-family: Montserrat,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "Bartender Semi Condensed Sans",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     /* font-size: 3.73333vw; */
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -29,9 +31,14 @@ html{
 }
 
 .nav{
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    /* height: 10vh; */
     display:flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    background-color: #150f0b;
 }
 
 .nav .heading {
@@ -47,7 +54,6 @@ html{
     display: flex;
     align-items: center;
     flex-direction: row;
-    /* background-color: #333; */
 }
   
 .navbar a {
@@ -81,7 +87,7 @@ html{
     width: 50%;
     height: 50%;
     margin-left: 300px;
-    padding-top: 15px;
+    padding-top: 80px;
 }
 
 .front .highlight{
@@ -223,23 +229,25 @@ textarea::placeholder{
     width: 230px;
     margin-bottom: 9px;
     padding: 5px;
-    background-color: #232323;
+    /* background-color: #232323; */
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     outline: none;
     font-size: 15px;
+    background-color: transparent;
 }
 
 .contact textarea{
     padding: 5px;
     margin-left: 10px;
     text-decoration: none;
-    background-color: #232323;
+    /* background-color: #232323; */
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
     outline: none;
+    background-color: transparent;
 }
 
 .fourth .maps{
@@ -419,11 +427,10 @@ textarea::placeholder{
 
     .fourth .contact {
         width: 100%;
-        margin: 0;
+        margin: 10px;
         margin-top: 15px;
         right: 0;
         height:auto;
-        background-color: transparent;
     }
 
     .contact input{
@@ -535,7 +542,6 @@ textarea::placeholder{
         margin-top: 15px;
         right: 0;
         height:auto;
-        background-color: transparent;
     }
 
     .fourth .contact .con{

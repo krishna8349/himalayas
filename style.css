@@ -143,7 +143,7 @@ html{
     /* position: relative; */
     /* left: 40px; */
     color: #ccc;
-    width: 25%;
+    width: 30%;
     box-sizing: border-box;
 }
 
@@ -214,7 +214,7 @@ html{
 }
 
 .fourth .contact div{
-    width: 50%;
+    width: 73%;
 }
 
 .fourth .con{
@@ -228,7 +228,6 @@ html{
 
 .fourth .loc-icon{
     color: #856B39;
-    /* top: 10px; */
     left: 25px;
     width: 10%;
     position: relative;
@@ -418,8 +417,16 @@ textarea::placeholder{
     }
 }
 
+/* Extra small devices (phones, 350px and down) */
+@media only screen and (max-width: 350px) {
+    /* Position the "next button" to the right */
+    .next {
+        right: -10px;
+        border-radius: 3px 0 0 3px;
+    }
+}
 
-/* Extra small devices (phones, 600px and down) */
+/* small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .main{
         display: flex;
@@ -598,7 +605,7 @@ textarea::placeholder{
     }
 
     .menu .rate-chart{
-        width: 50%;
+        width: 70%;
     }
 
     .fourth{
@@ -702,9 +709,9 @@ textarea::placeholder{
         width: 100%;
     }
 
-    .menu .rate-chart{
-        width: 50%;
-    }
+    /* .menu .rate-chart{
+        width: 70%;
+    } */
 
     .fourth{
         width: auto;

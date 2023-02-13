@@ -485,6 +485,10 @@ textarea::placeholder{
         width: 100%;
     }
 
+    .menu .title{
+        font-size: 35px;
+    }
+
     .menu .rate-chart{
         width: 100%;
     }
@@ -525,6 +529,7 @@ textarea::placeholder{
         width: 100%;
         margin-top: 15px;
         margin-right: 0%;
+        right: 0;
     }
 
     .footer{
@@ -593,7 +598,7 @@ textarea::placeholder{
     }
 
     .menu .rate-chart{
-        width: 100%;
+        width: 50%;
     }
 
     .fourth{
@@ -633,6 +638,7 @@ textarea::placeholder{
         width: 100%;
         margin-top: 15px;
         margin-right: 0%;
+        right: 0;
     }
 
     .footer{
@@ -696,6 +702,10 @@ textarea::placeholder{
         width: 100%;
     }
 
+    .menu .rate-chart{
+        width: 50%;
+    }
+
     .fourth{
         width: auto;
         height: auto;
@@ -720,7 +730,7 @@ textarea::placeholder{
     }
 
     .fourth .contact span{
-        width: 90%;
+        width: 85%;
     }
 
     .fourth .contact textarea{

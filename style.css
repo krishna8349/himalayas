@@ -128,9 +128,9 @@ html{
 }
 
 .menu{
-    width: 50%;
+    width: 100%;
     flex-direction: column;
-    margin-left: 25%;
+    /* margin-left: 25%; */
 }
 
 .menu .title{
@@ -140,10 +140,10 @@ html{
 }
 
 .menu .rate-chart{
-    position: relative;
-    left: 40px;
+    /* position: relative; */
+    /* left: 40px; */
     color: #ccc;
-    width: 60%;
+    width: 25%;
     box-sizing: border-box;
 }
 
@@ -173,7 +173,7 @@ html{
 
 /* Position the "next button" to the right */
 .next {
-    right: 75px;
+    right: 0;
     border-radius: 3px 0 0 3px;
 }
 
@@ -208,55 +208,66 @@ html{
     background-color: #232323;
     display: flex;
     justify-content: start;
-    padding: 25px;
     padding-bottom: 10px;
     flex-direction: column;
     position: relative;
-    margin-left: 10%;
+}
+
+.fourth .contact div{
+    width: 50%;
 }
 
 .fourth .con{
     position: relative;
     font-size: 40px;
+    width: 40%;
     color:darkgoldenrod;
+    left: 25px;
+    top: 20px;
 }
 
 .fourth .loc-icon{
     color: #856B39;
-    top: 10px;
+    /* top: 10px; */
+    left: 25px;
+    width: 10%;
     position: relative;
 }
 
 .fourth .con-location{
     position: relative;
-    bottom: 30px;
+    bottom: 43px;
     font-size: 18px;
-    left: 25px;
+    left: 50px;
 }
 
 .fourth .con-number{
     font-size: 18px;
-    bottom: 65px;
-    left: 25px;
+    bottom: 85px;
+    left: 50px;
     position: relative;
 }
 
 .fourth .con-icon{
     color: #856B39;
-    bottom: 25px;
+    bottom: 45px;
+    width: 10%;
+    left: 25px;
     position: relative;
 }
 
 .fourth .message-us{
     font-size: 18px;
-    bottom: 90px;
-    left: 25px;
+    bottom: 120px;
+    left: 50px;
     position: relative;
 }
 
 .fourth .mes-icon{
     position: relative;
-    bottom: 50px;
+    bottom: 80px;
+    width: 10%;
+    left: 25px;
     color:#856B39;
 }
 
@@ -271,9 +282,9 @@ textarea::placeholder{
 
 .contact span{
     position: relative;
-    bottom: 100px;
+    bottom: 140px;
     margin-top: 6px;
-    left: 25px;
+    left: 45px;
 }
 
 .contact input{
@@ -301,8 +312,8 @@ textarea::placeholder{
     width: 30%;
     padding: 10px;
     position: relative;
-    bottom: 75px;
-    left: 25px;
+    bottom: 115px;
+    left: 50px;
     background-color: transparent;
     color: rgb(133,107,57);
     border-color: rgb(133,107,57);
@@ -487,17 +498,11 @@ textarea::placeholder{
         flex-direction: column;
     }
 
-    .fourth .con{
-        left: 50%;
-        bottom: 0;
-    }
-
     .fourth .contact {
-        width: 100%;
+        width: 90%;
         margin: 10px;
         margin-top: 15px;
         right: 0;
-        height:auto;
     }
 
     .contact input{
@@ -608,11 +613,6 @@ textarea::placeholder{
         height:auto;
     }
 
-    .fourth .contact .con{
-        left: 0%;
-        bottom: 0;
-    }
-
     .contact input{
         padding: 0%;
         height: 4vh;
@@ -720,7 +720,7 @@ textarea::placeholder{
     }
 
     .fourth .contact span{
-        width: 100%;
+        width: 90%;
     }
 
     .fourth .contact textarea{

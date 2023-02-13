@@ -222,7 +222,7 @@ html{
 }
 
 .fourth .loc-icon{
-    color: white;
+    color: #856B39;
     top: 10px;
     position: relative;
 }
@@ -242,7 +242,7 @@ html{
 }
 
 .fourth .con-icon{
-    color: white;
+    color: #856B39;
     bottom: 25px;
     position: relative;
 }
@@ -257,7 +257,7 @@ html{
 .fourth .mes-icon{
     position: relative;
     bottom: 50px;
-    color: white;
+    color:#856B39;
 }
 
 input::placeholder{

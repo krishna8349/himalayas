@@ -350,7 +350,7 @@ textarea::placeholder{
     padding: 10px;
     position: relative;
     bottom: 80px;
-    left: 50px;
+    left: 60px;
     background-color: transparent;
     color: rgb(133,107,57);
     border-color: rgb(133,107,57);
@@ -616,7 +616,7 @@ textarea::placeholder{
     }
 
     .second .highlight2 {
-        font-size: 25px;
+        font-size: 22px;
         margin-bottom: 20px;
         left: 0;
     }
@@ -652,21 +652,21 @@ textarea::placeholder{
 
     .fourth .con-location {
         position: relative;
-        bottom: 43px;
+        bottom: 15px;
         font-size: 14px;
         left: 50px;
     }
 
     .fourth .con-number {
         font-size: 15px;
-        bottom: 80px;
+        bottom: 46px;
         left: 50px;
         position: relative;
     }
 
     .fourth .message-us {
         font-size: 15px;
-        bottom: 115px;
+        bottom: 85px;
         left: 50px;
         position: relative;
     }
@@ -687,6 +687,11 @@ textarea::placeholder{
         padding: 0;
         margin: 0;
         width: 100%;
+    }
+
+    .contact .submit-btn{
+        font-size: 11px;
+        padding: 10px;
     }
 
     .fourth .maps{
@@ -762,12 +767,12 @@ textarea::placeholder{
     }
 
     .second .second-demo-image{
-        width: 75%;
+        width: 59%;
         left: 0;
     }
 
     .second .highlight2 {
-        font-size: 20px;
+        font-size: 15px;
         margin: 0%;
         margin-bottom: 20px;
         left: 0;
@@ -817,14 +822,14 @@ textarea::placeholder{
 
     .fourth .con-number {
         font-size: 15px;
-        bottom: 80px;
+        bottom: 45px;
         left: 50px;
         position: relative;
     }
 
     .fourth .message-us {
         font-size: 15px;
-        bottom: 115px;
+        bottom: 85px;
         left: 50px;
         position: relative;
     }
@@ -843,6 +848,12 @@ textarea::placeholder{
         padding: 0;
         margin: 0;
         width: 100%;
+    }
+
+    .contact .submit-btn{
+        width: 25%;
+        font-size: 10px;
+        padding: 7px;
     }
 
     .fourth .maps{
@@ -879,11 +890,15 @@ textarea::placeholder{
     }
 
     .front .highlight {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .second .highlight2 {
         font-size: 15px;
+    }
+
+    .second .second-demo-image {
+        width: 50%;
     }
 
     .fourth .maps {
@@ -897,13 +912,32 @@ textarea::placeholder{
     }
 }
 
-@media only screen and (max-width: 280px) {
+@media only screen and (max-width: 365px) {
+    .front .highlight {
+        font-size: 14px;
+    }
+
+    .second .highlight2 {
+        font-size: 12px;
+    }
+
+    .second .second-demo-image {
+        width: 50%;
+    }
+
+    .contact .submit-btn{
+        font-size: 8px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 300px) {
     .main{
         display: flex;
     }
 
     .front .highlight {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .second .highlight2 {

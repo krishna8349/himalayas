@@ -248,7 +248,6 @@ html{
     padding-bottom: 10px;
     flex-direction: column;
     position: relative;
-    border: 2px solid red;
 }
 
 .fourth .contact div{

@@ -375,7 +375,8 @@ textarea::placeholder{
 }
 
 .footer{
-    height: 30vh;
+    height: 25vh;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -561,8 +562,7 @@ textarea::placeholder{
     }
 
     .footer{
-        height: auto;
-        margin-top: 10px;
+        height: 18vh;
     }
 
     .footer div{
@@ -707,17 +707,13 @@ textarea::placeholder{
     }
 
     .footer{
-        height: auto;
-        margin-top: 10px;
         margin-left: 10px;
+        font-size: 17px;
     }
 
     .footer div{
         width: 100%;
         margin-bottom: 10px;
-        display: flex;
-        justify-content: left;
-        text-align: left;
     }
     
 }
@@ -869,17 +865,13 @@ textarea::placeholder{
     }
 
     .footer{
-        height: auto;
-        margin-top: 10px;
         margin-left: 10px;
     }
 
     .footer div{
         width: 100%;
         margin-bottom: 10px;
-        display: flex;
-        justify-content: left;
-        text-align: left;
+        height: 3vh;
         font-size: 15px;
     }
 
@@ -933,7 +925,7 @@ textarea::placeholder{
     .contact .submit-btn{
         font-size: 8px;
         overflow: hidden;
-    }
+    }   
 }
 
 @media only screen and (max-width: 300px) {
@@ -964,5 +956,12 @@ textarea::placeholder{
 
     .footer .social .icon a{
         padding: 7px;
+    }
+
+    .footer div{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 2vh;
+        font-size: 15px;
     }
 }

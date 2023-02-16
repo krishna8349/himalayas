@@ -426,7 +426,7 @@ textarea::placeholder{
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: darkorange;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -434,7 +434,7 @@ textarea::placeholder{
 }
   
 #topbtn:hover {
-    background-color: #555;
+    background-color: darkgoldenrod;
 }
 
 @media screen and (max-width: 600px) {

@@ -127,10 +127,16 @@ html{
 
 .front .highlight{
     color: darkorange;
-    font-size: 36px;
+    font-size:35px;
     position: relative;
     right: 164px;
-    font-family: "Bartender Semi Condensed Serif Pressed",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* font-family: 'Scrypta Personal Use', sans-serif;
+
+	font-style: normal;
+
+	font-weight: 400;
+
+	src : url(../ScryptaPersonalUseBoldItalic-X3eoP.ttf) */
 }
 
 .front .front-display{
@@ -169,7 +175,6 @@ html{
 .menu{
     width: 100%;
     flex-direction: column;
-    /* margin-left: 25%; */
 }
 
 .menu .title{
@@ -387,7 +392,7 @@ textarea::placeholder{
 }
 
 .footer div:hover{
-    color: red;
+    color: darkorange;
 }
 
 .footer .logo-name:hover{
@@ -408,7 +413,7 @@ textarea::placeholder{
 
 .footer .social .fa:hover{
     cursor: pointer;
-    color: red;
+    color: darkorange;
 }
 
 #topbtn {

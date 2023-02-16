@@ -127,10 +127,16 @@ html{
 
 .front .highlight{
     color: darkorange;
-    font-size: 36px;
+    font-size:35px;
     position: relative;
     right: 164px;
-    font-family: "Bartender Semi Condensed Serif Pressed",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    /* font-family: 'Scrypta Personal Use', sans-serif;
+
+	font-style: normal;
+
+	font-weight: 400;
+
+	src : url(../ScryptaPersonalUseBoldItalic-X3eoP.ttf) */
 }
 
 .front .front-display{
@@ -169,7 +175,6 @@ html{
 .menu{
     width: 100%;
     flex-direction: column;
-    /* margin-left: 25%; */
 }
 
 .menu .title{
@@ -370,7 +375,8 @@ textarea::placeholder{
 }
 
 .footer{
-    height: 30vh;
+    height: 25vh;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -387,7 +393,7 @@ textarea::placeholder{
 }
 
 .footer div:hover{
-    color: red;
+    color: darkorange;
 }
 
 .footer .logo-name:hover{
@@ -408,7 +414,7 @@ textarea::placeholder{
 
 .footer .social .fa:hover{
     cursor: pointer;
-    color: red;
+    color: darkorange;
 }
 
 #topbtn {
@@ -421,7 +427,7 @@ textarea::placeholder{
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: darkorange;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -429,7 +435,7 @@ textarea::placeholder{
 }
   
 #topbtn:hover {
-    background-color: #555;
+    background-color: darkgoldenrod;
 }
 
 @media screen and (max-width: 600px) {
@@ -556,8 +562,7 @@ textarea::placeholder{
     }
 
     .footer{
-        height: auto;
-        margin-top: 10px;
+        height: 18vh;
     }
 
     .footer div{
@@ -702,17 +707,13 @@ textarea::placeholder{
     }
 
     .footer{
-        height: auto;
-        margin-top: 10px;
         margin-left: 10px;
+        font-size: 17px;
     }
 
     .footer div{
         width: 100%;
         margin-bottom: 10px;
-        display: flex;
-        justify-content: left;
-        text-align: left;
     }
     
 }
@@ -864,17 +865,13 @@ textarea::placeholder{
     }
 
     .footer{
-        height: auto;
-        margin-top: 10px;
         margin-left: 10px;
     }
 
     .footer div{
         width: 100%;
         margin-bottom: 10px;
-        display: flex;
-        justify-content: left;
-        text-align: left;
+        height: 3vh;
         font-size: 15px;
     }
 
@@ -928,7 +925,7 @@ textarea::placeholder{
     .contact .submit-btn{
         font-size: 8px;
         overflow: hidden;
-    }
+    }   
 }
 
 @media only screen and (max-width: 300px) {
@@ -959,5 +956,12 @@ textarea::placeholder{
 
     .footer .social .icon a{
         padding: 7px;
+    }
+
+    .footer div{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 2vh;
+        font-size: 15px;
     }
 }

@@ -9,91 +9,95 @@
     <link rel="stylesheet" href="style.css">
     <title>Himaliyas</title>
 </head>
-<body>
+<body id="home">
+  <button onclick="topFunction()" id="topbtn" title="Go to top">^</button>
     <main class="main">
-        <div class="navbar">
-            <h1 class="heading">Himaliyas</h1>
-            <ul class="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">About us</a></li>
-            </ul>
+        <div class="nav">
+            <h1 class="heading">HIMALAYAS</h1>
+            <div class="dropdown">
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About us</a>
+              </div>
+              <button onclick="myFunction()" class="dropbtn">Menu</button>
+            </div>
+            <div class="navbar" id="myTopnav">
+              <a href="#home">Home</a>
+              <a href="#menu" id="4">Menu</a>
+              <a href="#contact">Contact us</a>
+              <a href="#about">About us</a>
+            </div>
         </div>
         <section class="front">
             <div class="front-display">
                 <div class="demo-image">
-                    <img src="/images/How-to-Bake-Chicken-Breast-6.jpg" alt="Trulli" width="90%" height="90%">
+                    <img src="/images/How-to-Bake-Chicken-Breast-6.jpg" alt="Trulli" width="100%" height="90%">
                 </div>
             </div>
-            <h1 class="highlight">GOOD TIME WITH <br>GREAT FRIENDS</h1>
+            <div class="highlight">
+              <h1>GOOD TIME WITH GREAT FRIENDS</h1>
+            </div>
         </section>
         <section class="second">
             <div class="highlight2">
-                <h2>SERVING TASTY
-                BITES SINCE 2023</h2>
+                <h1>SERVING TASTY <br>
+                BITES</h1>
             </div>
             <div class="second-demo-image">
                 <img src="/images/jamaican-jerk-chicken-FT-RECIPE0918-eabbd55da31f4fa9b74367ef47464351.jpg" alt="" width="100%" height="100%"> 
             </div>
         </section>
-        <section class="third">
-            <div class="title"><h1>MENU</h1></div>
-            <div class="slider">
-                <div class="slides">
-                  <div id="slide-1">
-                    <img src="/images/Paneer-Tikka-Kebabs-05.jpg" alt="">
-                  </div>
-                  <div id="slide-2">
-                    <img src="/images/kaju-kari.jpg" alt="">
-                  </div>
-                  <div id="slide-3">
-                    <img src="/images/dalfry.jpg" alt="">
-                  </div>
-                  <div id="slide-4">
-                    <img src="/images/kadai-paneer.jpg" alt="">
-                  </div>
-                  <div id="slide-5">
-                    <img src="/images/naan.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-        </section>
-        <section class="menu">
+        <section class="menu" id="menu">
           <div class="title"><h1>MENU RATE</h1></div>
           <div class="rate-chart">
             <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="images/first-page.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/second-page.jpg" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="images/third-page.jpg" style="width:100%">
+              </div>
 
               <div class="mySlides fade">
-                <!-- <div class="numbertext">1 / 4</div> -->
-                <img src="images/first-page.png" style="width:100%">
-                <!-- <div class="text">Caption Text</div> -->
+                <img src="images/fourth-page.jpg" style="width:100%">
               </div>
-              
+
               <div class="mySlides fade">
-                <!-- <div class="numbertext">2 / 4</div> -->
-                <img src="images/sencond-page.png" style="width:100%">
-                <!-- <div class="text">Caption Two</div> -->
-              </div>
-              
-              <div class="mySlides fade">
-                <!-- <div class="numbertext">3 / 4</div> -->
-                <img src="images/third-page.png" style="width:100%">
-                <!-- <div class="text">Caption Three</div> -->
-              </div>
-              
-              <div class="mySlides fade">
-                <!-- <div class="numbertext">4 / 4</div> -->
-                <img src="images/last-page.png" style="width:100%">
-                <!-- <div class="text">Caption Four</div> -->
+                <img src="images/last-page.jpg" style="width:100%">
               </div>
               <a class="prev" onclick="plusSlides(-1)">❮</a>
               <a class="next" onclick="plusSlides(1)">❯</a>
-              
-              </div>
+            </div>
+          </div>
         </section>
-        <section class="fourth">
-            <div class="contact">
+        <section class="fourth" id="contact">
+          <div class="contact">
+            <h1 class="con">CONTACT</h1>
+            <a href="" class="loc-icon">
+              <i class="fa fa-location-arrow   fa-lg"></i>
+            </a>
+            <div class="con-location">
+              <p>RAU BYPASS, near SILICON VALLEY,<br> RAU, Indore, Madhya Pradesh 452016</p>
+            </div>
+            <a href="" class="con-icon">
+              <i class="fa fa-phone-square fa-lg"></i>
+            </a>
+            <div class="con-number">
+              <p>7354519859</p>
+            </div>
+            <a href="" class="mes-icon">
+              <i class="fa fa-comment fa-lg"></i>
+            </a>
+            <div class="message-us">
+              <p>Message us</p>
+            </div>
               <span class="name">
                 <input type="text" name="name" placeholder="Name">
               </span>
@@ -104,27 +108,28 @@
                 <input type="email" name="email" placeholder="Email Address">
               </span>
               <span class="message">
-                <textarea name="message" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                <textarea name="message" id="" cols="30" rows="3" placeholder="Message"></textarea>
               </span>
+              <button type="submit" class="submit-btn">send</button>
             </div>
             <div class="maps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1030.0176137911908!2d75.83331267091118!3d22.634475077386803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fb905efa0b79%3A0x25ff356f2797cdfe!2sHimalayas%20restaurant%20and%20Dhaba!5e1!3m2!1sen!2sin!4v1675160033415!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1030.0176137911908!2d75.83331267091118!3d22.634475077386803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fb905efa0b79%3A0x25ff356f2797cdfe!2sHimalayas%20restaurant%20and%20Dhaba!5e1!3m2!1sen!2sin!4v1675160033415!5m2!1sen!2sin" width="95%" height="350vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <section class="footer">
-          <div class="logo-name">Himaliyas</div>
-          <div class="quots">Best place for celebration with frinds and family</div>
-          <div class="location">RAU BYPASS, near SILICON VALLEY, RAU, Indore, Madhya Pradesh 452016</div>
-          <div class="contact-number">Contact No. :- 7354519859</div>
+        <section class="footer" id="about">
+          <div class="logo-name">Himalayas</div>
+          <div class="quots">Best place for celebration with friends and family</div>
           <div class="social">
-            <div>
-              <i class="fa fa-instagram fa-lg"></i>
-            </div>
-            <div>
-              <i class="fa fa-twitter fa-lg"></i>
-            </div>
-            <div>
-              <i class="fa fa-facebook   fa-lg"></i>
+            <div class="icon">
+              <a href="https://www.instagram.com/himalayas_restaurant/">
+                <i class="fa fa-instagram fa-lg"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter fa-lg"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-facebook   fa-lg"></i>
+              </a>
             </div>
           </div>
         </section>
@@ -158,39 +163,64 @@
         dots[slideIndex-1].className += " active";
       }
       </script>
-    <!-- <script>  
-      function Map123() {  
-      var mapOptions = {  
-          center:new google.maps.LatLng(51.508742,-0.120850),  
-          zoom: 10,  
-          mapTypeId: google.maps.MapTypeId.HYBRID  
-      }  
-      var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-      }  
-
-      </script>  
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script> -->
-
-    <!-- <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-          let i;
-          let slides = document.getElementsByClassName("mySlides");
-          let dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
+    
+    <!-- navbar show menu icon -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+            x.style.flexDirection = 'row';
+          } else {
+            x.className = "navbar";
+            x.style.flexDirection = 'row'
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}    
-          for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
-        </script> -->
+    </script>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+    <!-- go to top of the website -->
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("topbtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 </body>
 </html>

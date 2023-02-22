@@ -351,8 +351,8 @@ textarea::placeholder{
 }
 
 .contact .submit-btn{
-    width: 18%;
-    padding: 8px;
+    width: 25%;
+    padding: 10px;
     position: relative;
     bottom: 80px;
     left: 60px;
@@ -848,9 +848,7 @@ textarea::placeholder{
 
     .contact .submit-btn{
         font-size: 16px;
-        border: none;
-        color: white;
-        background-color: rgb(133,107,57);
+        margin-left: 20%;
     }
 
     .fourth .maps{
@@ -892,6 +890,11 @@ textarea::placeholder{
 
     .second .second-demo-image {
         width: 50%;
+    }
+
+    .contact .submit-btn{
+        font-size: 12px;
+        margin-left: 20%;
     }
 
     .fourth .maps {
@@ -938,6 +941,11 @@ textarea::placeholder{
 
     .fourth .contact span {
         width: 80%;
+    }
+
+    .contact .submit-btn{
+        font-size: 10px;
+        margin-left: 20%;
     }
 
     .footer div{

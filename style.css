@@ -832,7 +832,7 @@ textarea::placeholder{
 
     .contact input{
         padding-top: 2%;
-        height: 4vh;
+        height: 5vh;
         width: 100%;
     }
 
@@ -890,6 +890,10 @@ textarea::placeholder{
 
     .second .second-demo-image {
         width: 50%;
+    }
+
+    .fourth .contact span {
+        width: 80%;
     }
 
     .contact .submit-btn{
@@ -958,7 +962,6 @@ textarea::placeholder{
     }
 
     .footer div{
-        width: 100%;
         margin-bottom: 10px;
         height: 2vh;
         font-size: 15px;
